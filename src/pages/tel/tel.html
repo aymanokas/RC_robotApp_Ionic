@@ -1,0 +1,87 @@
+<!--<ion-header>
+  <ion-navbar>
+    <ion-title>
+     
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+-->
+<ion-content  class="no-scroll" style="background-color:black">
+
+
+ <div class="direction" >
+  <ion-grid>
+    <ion-row>
+        
+      <ion-col>
+          
+          <div style="text-align: center">
+            <br>
+              <button ion-button outline color ="primary">Set Var</button>
+              <button ion-button outline color="primary">Default</button>
+              <br>
+              <p style="color:green;font-weight:bold">var : {{VAR}}</p>
+            </div>
+            <div style="padding-top:10%">
+          <button (touchstart) = "avancer()" (touchend)="sendS()" style="margin-left : 40% ;border-radius : 50%; height:80px; width: 80px" ion-button  color="light" outline large><ion-icon style="font-size: 40px;"  name="arrow-dropup"></ion-icon></button>
+
+        <br>
+        <button (touchstart) = "tg()" (touchend)="sendS()"  style="margin-left : 15% ;border-radius : 50%;  height:80px; width: 80px" ion-button color="light" outline large ><ion-icon style="font-size: 40px;"  name="arrow-dropleft"></ion-icon></button>
+   
+        <button (touchstart) = "td()" (touchend)="sendS()"  style="margin-left : 27% ;border-radius : 50%;  height:80px; width: 80px" ion-button color="light" outline large><ion-icon style="font-size: 40px;"  name="arrow-dropright"></ion-icon></button>
+        <br>
+        <button (touchstart) = "reculer()" (touchend)="sendS()"  style="margin-left : 40% ;border-radius : 50%; height:80px; width: 80px " ion-button color="light" outline large><ion-icon style="font-size: 40px;"  name="arrow-dropdown"></ion-icon></button>
+      </div>
+      </ion-col>
+     <!-- <ion-col>
+          <br>
+          <div style="padding-top :40% ; text-align:center">
+              <button   ion-button color="light" style="border-color: transparent" outline large><img style="height : 50px" src="assets/railsleft.png"></button>
+              <button   ion-button color="light" style="border-color: transparent" outline large><img style="height : 50px" src="assets/railsright.png"></button>
+              <br>
+              
+          </div>
+         
+      </ion-col>
+    -->
+      <ion-col>
+          
+          <br>
+          <div style="text-align: center">
+              <button (touchstart) = "sekaLeft()" (touchend)="sendS()"   ion-button color="light" style="border-color: transparent" outline ><img style="height : 30px" src="assets/railsleft.png"></button>
+          <button (touchstart) = "openD()" (touchend)="sendS()"  ion-button color ="secondary" outline >Open D   </button>
+          <button  (touchstart) = "closeD()" (touchend)="sendS()"  ion-button color="o" outline >Close D</button>
+          <button (touchstart) = "sekaRight()" (touchend)="sendS()"   ion-button color="light" style="border-color: transparent" outline ><img style="height : 30px" src="assets/railsright.png"></button>
+        </div>
+        <br><br>
+          <div>
+              <button (touchstart) = "pinceUp()" (touchend)="sendS()"  style="margin-left : 40% ;border-radius : 50%; height:70px; width: 70px" ion-button color="light" outline large><ion-icon  style="font-size: 40px;"  name="arrow-dropup"></ion-icon></button>
+             
+             
+
+        <br>
+        <button (touchstart) = "pinceL()" (touchend)="sendS()"  style="margin-left : 15% ;border-radius : 50%;  height:80px; width: 80px" ion-button color="light" outline large ><ion-icon style="font-size: 40px;"  name="arrow-dropleft"></ion-icon></button>
+   
+        <button (touchstart) = "pinceR()" (touchend)="sendS()"  style="margin-left : 27% ;border-radius : 50%;  height:80px; width: 80px" ion-button color="light" outline large><ion-icon style="font-size: 40px;"  name="arrow-dropright"></ion-icon></button>
+        <br> <button (touchstart) = "pinceDown()" (touchend)="sendS()"  style="margin-left : 40% ;border-radius : 50%; height:70px; width: 70px" ion-button color="light" outline large><ion-icon style="font-size: 40px;"  name="arrow-dropdown"></ion-icon></button>
+        <!--<ion-item style="background-color:transparent">
+                <ion-range (pan) = "logAngle()" (panend)="stopAngle()" min="0" max="180" [(ngModel)]="angle" color="secondary">
+                  <ion-label style="color:white" range-left>0</ion-label>
+                  <ion-label style="color:white" range-right>180</ion-label>
+                </ion-range>
+              </ion-item>
+            -->
+                  </div>
+                  <br><br> <br>
+                  <div style="text-align: center">
+                  <button (touchstart) = "keepPinceClosed()" style="border-radius : 50%;height:70px; width: 70px " ion-button outline color ="danger" large><ion-icon name="git-network"></ion-icon></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button (touchstart) = "closePince()" (touchend)="sendZ()"  style="border-radius : 50%; height:70px; width: 70px" ion-button color="primary" outline large> C </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button (touchstart) = "openPince()" (touchend)="sendZ()"  style="border-radius : 50%;height:70px; width: 70px " ion-button color="secondary" outline large> O</button>
+        </div>
+        </ion-col>
+    </ion-row>
+
+
+  </ion-grid>
+ </div>
+</ion-content>

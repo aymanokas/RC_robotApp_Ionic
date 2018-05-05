@@ -1,0 +1,20 @@
+
+
+
+<ion-content  style="background-image: url('assets/backgroundHome.png');background-position: center;
+background-size: 100%" >
+
+
+  <div style="text-align:center">
+  <button class="imgConnect" (click)="conn()" style="background: transparent"> 
+   <img style="display: block; height:150px;"  src="assets/connect.png">
+  </button>
+  <div *ngIf = "isConnecting">
+      <hr>
+      <h4>Connecting to HC-06 (smartcar) please wait !</h4>
+  <hr>
+     <!-- <button  (click)="connectToIt(device.id)" *ngFor="let device of Adevices" ion-button outline small>{{Adevice.name}}</button>
+      <hr>-->
+   </div>
+</div>
+</ion-content>
